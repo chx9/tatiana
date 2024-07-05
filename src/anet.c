@@ -26,7 +26,6 @@
 #include <stdio.h>
 
 #include "anet.h"
-#include "redis_config.h"
 #include "util.h"
 
 #define UNUSED(x) (void)(x)

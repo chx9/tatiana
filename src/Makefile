@@ -111,7 +111,7 @@ QUIET_INSTALL = @printf '    %b %b\n' $(LINKCOLOR)INSTALL$(ENDCOLOR) $(BINCOLOR)
 endif
 
 REDIS_CLUSTER_PROXY_NAME=tatiana
-REDIS_CLUSTER_PROXY_OBJ=tatiana.o adlist.o ae.o anet.o crc16.o dict.o endianconv.o monotonic.o rax.o redisassert.o sds.o siphash.o util.o zmalloc.o strl.o mt19937-64.o logger.o config.c help.c command.c
+REDIS_CLUSTER_PROXY_OBJ=tatiana.o adlist.o ae.o anet.o crc16.o dict.o endianconv.o monotonic.o rax.o redisassert.o sds.o siphash.o util.o zmalloc.o strl.o mt19937-64.o  
 
 Makefile.dep:
 	-$(REDIS_CLUSTER_PROXY_CC) -MM *.c > Makefile.dep 2> /dev/null || true
