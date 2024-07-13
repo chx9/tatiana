@@ -17,7 +17,7 @@
 
 #ifndef __REDIS_CLUSTER_PROXY_UTIL_H__
 #define __REDIS_CLUSTER_PROXY_UTIL_H__
-
+#define UNUSED(x) (void)(x)
 #include <hiredis.h>
 
 void consumeRedisReaderBuffer(redisContext *ctx);

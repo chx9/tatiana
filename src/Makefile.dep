@@ -7,11 +7,13 @@ ae_kqueue.o: ae_kqueue.c
 ae_select.o: ae_select.c
 anet.o: anet.c fmacros.h anet.h util.h ../deps/hiredis/hiredis.h \
  ../deps/hiredis/read.h ../deps/hiredis/sds.h ../deps/hiredis/alloc.h
+config.o: config.c config.h redis_config.h sds.h zmalloc.h logger.h
 crc16.o: crc16.c
 debug.o: debug.c
 dict.o: dict.c fmacros.h redis_config.h dict.h zmalloc.h redisassert.h \
  monotonic.h
 endianconv.o: endianconv.c
+logger.o: logger.c logger.h config.h redis_config.h sds.h
 main.o: main.c zmalloc.h
 monotonic.o: monotonic.c monotonic.h fmacros.h redisassert.h \
  redis_config.h
@@ -21,7 +23,8 @@ redisassert.o: redisassert.c
 sds.o: sds.c sds.h sdsalloc.h zmalloc.h
 siphash.o: siphash.c
 strl.o: strl.c
-tatiana.o: tatiana.c sds.h ae.h monotonic.h fmacros.h anet.h
+tatiana.o: tatiana.c ae.h monotonic.h fmacros.h anet.h zmalloc.h sds.h \
+ util.h ../deps/hiredis/hiredis.h
 util.o: util.c sds.h util.h ../deps/hiredis/hiredis.h \
  ../deps/hiredis/read.h ../deps/hiredis/sds.h ../deps/hiredis/alloc.h
 zmalloc.o: zmalloc.c fmacros.h redis_config.h zmalloc.h atomicvar.h
