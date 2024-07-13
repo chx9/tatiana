@@ -25,6 +25,8 @@
 #define BINDADDR_MAX                        16
 #define MAX_ENTRY_POINTS                    255
 #define MAX_POOL_SIZE                       50
+#define MAX_ACCEPT                          1000
+#define NET_IP_STR_LEN                      46
 #define DEFAULT_PID_FILE                    "/var/run/redis-cluster-proxy.pid"
 #define DEFAULT_PORT                        7777
 #define DEFAULT_UNIXSOCKETPERM              0
